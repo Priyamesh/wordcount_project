@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>WORD COUNT</title>
+    </head>
+    <body>
+        <a href="{% url 'home' %}"> HOME </a>
+        <h1>Your text:-</h1>
+        <h2>{{fulltext}}</h2>
+        <h1>length :- {{count}}</h1>
+
+        {% for word,wordcount in worddict%}
+        {{word}} : {{wordcount}}
+        <br/>
+        {%endfor%}
+        
+    </body>
+</html>

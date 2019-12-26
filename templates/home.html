@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>WORD COUNT</title>
+    </head>
+    <body>
+        <h1>world count</h1>
+        <form action="{% url 'count' %}">
+                    <textarea cols='50' rows='5' name="fulltext"></textarea>
+                    <br/>
+                    <input type="submit" value="count !!" />
+        </form>
+        <a href="{% url 'about' %}"> ABOUT </a>
+    </body>
+</html>
